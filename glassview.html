@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper{
+            height: 100vh;
+            background-image: url(./bg.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: fixed;
+            background-repeat: no-repeat;
+        }
+        .banner{
+            width:600px;
+            height: 350px;
+            background:inherit;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            border-radius: 5px;
+            transform: translate(-50%,-50%);
+        }
+        .banner:before{
+            width: 650px;
+            height:400px;
+            content: '';
+            position: absolute;
+            top: -25px;
+            left:-25px;
+            bottom: 0;
+            right: 0;
+            background: inherit;
+            box-shadow: inset 0 0 0 500px rgba(136, 58, 58, 0.2);
+            filter: blur(15px);
+        }
+        .img-text{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            width: 500px;
+        }
+        .img-text h2{
+            color:#fff;
+            font-family: big john;
+            margin:15px;
+            font-size: 78px;
+            letter-spacing: 2px;
+        }
+        .img-text p{
+            color:#fff;
+            font-family: big john;
+            margin:15px;
+            letter-spacing: 2px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="img-text">
+                <h2>Brinda</h2>
+                <div>
+                    <p>Hello</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
